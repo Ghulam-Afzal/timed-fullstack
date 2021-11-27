@@ -1,0 +1,134 @@
+.main-container {
+  width: 100;
+  min-height: 100vh;
+  text-align: center;
+  background: #ffffff;
+}
+
+
+.logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.nav-links .home-btn:hover {
+  transform: translateY(-5px);
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20vh;
+}
+
+.image {
+  height: 40vmin;
+  max-width: 100%;
+  pointer-events: none;
+}
+
+.section-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 62px;
+}
+
+.home-text {
+  font-family: "Noto Sans JP";
+  font-size: 28px;
+  margin: 4px;
+}
+
+.section {
+  min-height: 100vh;
+  width: 100;
+  background: #4361ee;
+  display: flex;
+  padding: 1.5rem;
+  padding-top: 3rem;
+  flex-direction: column-reverse;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-content: space-evenly;
+  align-items: center;
+}
+.section-alt {
+  background: #ffffff;
+}
+
+.section .home-text {
+  font-weight: 500;
+  text-align: left;
+}
+
+.section .section-title {
+  text-align: center;
+  margin: 0;
+}
+
+.home-btn {
+  cursor: pointer;
+  padding: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  font-weight: 500;
+  font-size: 24px;
+  text-decoration: none;
+  color: black;
+  background: #4361ee;
+  border-radius: 4px;
+  transition: 0.3s ease;
+  margin: 10px;
+  border: 1px darkblue;
+}
+
+.home-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.4);
+  background: #4361ee;
+}
+
+.home-btn:active {
+  transform: translateY(-1px);
+  background: #4361ee;
+  opacity: 100%;
+}
+
+.home-btn-alt {
+  color: #000001;
+  background: #F5F5F5;
+
+}
+.home-btn-alt:hover{
+  background: #E8E8E8;
+}
+
+.home-btn-alt:active{
+  background: #E8E8E8;
+}
+
+
+@media screen and (min-width: 1200px) {
+  .section .section-title {
+    text-align: left;
+    margin: 0;
+  }
+
+  .section {
+    text-align: justify;
+    padding: 4rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+
+  .section-text {
+    width: 80%;
+  }
+
+  .section-text .home-text {
+    text-align: justify;
+  }
+}

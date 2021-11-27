@@ -1,0 +1,108 @@
+.stopwatch-page-continaer {
+    height: 100%;
+    width: 100%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.stopwatch-main {
+    height: 50vh; 
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 5vw 0 5vw;
+}
+
+
+.stop-task { 
+    width: 80vw; 
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    border: 1px solid black; 
+    color: white;
+    background-color: #4361ee;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 10px; 
+}
+
+.stop-task p {
+    margin: 0px 10px 0px 10px; 
+}
+
+.stop-task:hover {
+    transform: translateY(-5px);
+}
+
+.btns {
+    width: 350px; 
+    height:25px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px; 
+    border: 1px soild red; 
+    border-radius: 5px;
+    color:white;  
+    cursor: pointer;
+}
+
+.btn {
+    width: 100px; 
+    height:25px; 
+    margin: 5px; 
+    border: none; 
+    background-color: #4361ee;
+    border-radius: 5px;
+    color:white;  
+    cursor: pointer; 
+
+}
+
+
+.btn:hover{
+    background-color: #5a74f2;
+    transform: transsition(backgound-color 350ms ease-in-out);
+}
+
+@media screen and (max-width: 356px) {
+    .btns {
+        flex-direction: column;
+        margin: 50px;
+        height: 100px;
+    }
+    
+    .btn {
+        height: 35px;
+    }
+}
+
+
+@media screen and (min-width: 768px){
+    .stopwatch-main h1 {
+        font-size: 50px;
+    }
+    .stopwatch-main h3 {
+        font-size: 35px;
+    }
+    
+    .stop-task {
+        height: 40px;
+        max-width: 60vw;
+    }
+
+    .btns {
+        width: 1500px; 
+    }
+
+    .btn {
+        width: 150px; 
+        height: 35px;
+    }
+}

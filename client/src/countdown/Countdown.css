@@ -1,0 +1,56 @@
+.Countdown-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+ }
+
+ .Countdown-main { 
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     border-radius: 1cm black solid;
+}  
+
+.Countdown-container h1 { 
+    font-size: 30px;
+}
+
+.Countdown-container p { 
+    font-size: 15px;
+    text-align: center;
+}
+
+.Countdown-main h3 { 
+    font-size: 25px;
+}
+
+.burger {
+    cursor: pointer;
+}
+
+@media screen and (min-width: 300px) { 
+    .Countdown-container-main h1 { 
+        font-size: 50px;
+    }
+    .Countdown-container p { 
+        font-size: 25px;
+    }
+    .Countdown-main h3 { 
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 500px) { 
+    .Countdown-container h1 { 
+        font-size: 60px;
+    }
+    .Countdown-container p { 
+        font-size: 25px;
+    }
+    .Countdown-main h3 { 
+        font-size: 45px;
+    }
+}
